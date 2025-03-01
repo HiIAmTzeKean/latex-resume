@@ -1,0 +1,332 @@
+\documentclass[10pt,a4paper]{article}
+
+% Page layout
+\usepackage[a4paper,left=1.25cm,right=1.25cm,top=1.3cm,bottom=1.3cm]{geometry}
+
+% Necessary packages
+\usepackage[unicode]{hyperref} % hyperref first
+\usepackage{hyperxmp}
+
+\hypersetup{
+    pdftitle={NG_TZE_KEAN_CV},
+    pdfsubtitle={ngtzekean_resume},
+    pdflang={en},
+    pdfmetalang={en},
+    pdfdate={D:20000000000000},
+    pdfcreationdate={D:20000000000000},
+    pdfmoddate={D:20000000000000},
+    pdfmetadate={D:20000000000000},
+    pdfcreator={},
+    pdfproducer={},
+}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage[fixed]{fontawesome5}
+
+\usepackage{tabularx} % For tagline table
+\usepackage{enumitem} % For precise control over itemize environments
+
+% Image & scale box
+\usepackage{graphicx}
+
+% Color
+\usepackage{xcolor}
+
+% NTU Colors
+\definecolor{ntured}{HTML}{D71440}
+\definecolor{ntublue}{HTML}{181C62}
+
+% Font settings
+% Palatino style font
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo}  % math & text
+
+% Times font (Times New Roman alike)
+% \usepackage{times}
+
+% Font size control variables
+\newcommand{\cvsectionfontsize}{11}       % Section font size
+\newcommand{\cvtaglinefirstfontsize}{11}  % Tagline first row font size
+\newcommand{\cvtaglinesecondfontsize}{10} % Tagline second row font size
+\newcommand{\cvbulletfontsize}{10}        % Bullet point font size
+
+% Disable numbering for sections
+\setcounter{secnumdepth}{0}
+
+% Commands
+\newcommand{\cvsection}[3][.2em]{
+  \vspace{-2.7em} % Top margin
+  \section[#3]{\textbf{\scalebox{.68}{\faIcon{#2}}~\fontsize{\cvsectionfontsize}{\cvsectionfontsize}\selectfont\MakeUppercase{#3}}}
+  \vspace{-1.8em}
+  \noindent\makebox[\textwidth]{\rule{\textwidth}{0.4pt}}
+  \\
+  \vspace{#1} % Bottom margin
+}
+
+\newcommand{\cvtagline}[5][1em]{
+  \vspace{-1em} % Top margin
+  \noindent\begin{tabularx}{\textwidth}{@{}Xr@{}}
+    {\fontsize{\cvtaglinefirstfontsize}{\cvtaglinefirstfontsize}\selectfont\textbf{#2}} & 
+    {\fontsize{\cvtaglinefirstfontsize}{\cvtaglinefirstfontsize}\selectfont\textbf{#3}} \\ % First row: bold
+    {\fontsize{\cvtaglinesecondfontsize}{\cvtaglinesecondfontsize}\selectfont{#4}} & 
+    {\fontsize{\cvtaglinesecondfontsize}{\cvtaglinesecondfontsize}\selectfont\textit{#5}} \\ % Second row: italic
+  \end{tabularx}
+  \\
+  \vspace{#1} % Bottom margin
+}
+
+\newcommand{\cvsingletagline}[3][1em]{
+  \vspace{-1em} % Top margin
+  \noindent\begin{tabularx}{\textwidth}{@{}Xr}
+    {\fontsize{\cvtaglinefirstfontsize}{\cvtaglinefirstfontsize}\selectfont\textbf{#2}} & 
+    {\fontsize{\cvtaglinefirstfontsize}{\cvtaglinefirstfontsize}\selectfont\textbf{#3}} \\ % First row: bold
+  \end{tabularx}
+  \\
+  \vspace{#1} % Bottom margin
+}
+
+\newcommand{\cvbullets}[2][1em]{
+  \vspace{-2.1em} % Top margin
+  {\fontsize{\cvbulletfontsize}{\cvbulletfontsize}\selectfont
+    \begin{itemize}[left=0pt,labelsep=1em]
+      \setlength\itemsep{0.2em} % Space between items
+      \setlength\labelwidth{1em} % Space allocated for labels
+      \setlength\parskip{0pt} % No extra space between items
+      #2
+    \end{itemize}
+  }
+  \vspace{#1} % Bottom margin
+}
+
+\setlength{\parindent}{0pt}
+
+% Document content
+\begin{document}
+
+\pagestyle{empty}
+
+% Candidate Name
+\begin{center}
+  {\bfseries\huge\scshape Ng Tze Kean} \\
+
+  \vspace{1em}
+
+  $ | $
+  \href{mailto:ngtzekean@gmail.com}{\faEnvelope \space ngtzekean@gmail.com}
+  $ | $
+  \href{tel:(+65)82288710}{\faPhone \space (+65) 8228 8710}
+  $ | $
+  \href{https://github.com/hiiamtzekean}{\faGithub \space hiiamtzekean}
+  $ | $
+  \href{https://www.linkedin.com/in/ngtzekean}{\faLinkedin \space ngtzekean}
+  $ | $ \\
+  \vspace{1em}
+\end{center}
+
+% Education
+\cvsection{graduation-cap}{Education}
+
+\cvtagline{Nanyang Technological University}{Aug. 2021 -- Jul. 2025}{Bachelor in Computer Science}{Singapore}
+\cvbullets{
+  \item CGPA: 4.92/5.0 (First class honours)
+  \item Specialisation in AI, Minor in Business }
+
+\cvtagline{Peking University}{Jul. 2024 -- Jul. 2024}{Summer Exchange}{China}
+
+\cvbullets{
+  \item Selected student with scholarship to attend summer school in Peking University}
+
+\cvtagline{Shanghai Jiao Tong University}{Jan. 2024 -- Jun. 2024}{Exchange Student}{China}
+
+\cvtagline{University Michigan - Shanghai Jiao Tong University}{Jan. 2024 -- Jun. 2024}{Exchange Student}{China}
+
+\cvtagline{Tsinghua University}{Aug. 2023 -- Dec. 2023}{Virtual Exchange}{Singapore}
+
+\cvtagline{National University Singapore}{Jan. 2023 -- May. 2023}{Exchange Student}{Singapore}
+
+% Professional Experience
+\cvsection{briefcase}{Professional Experience}
+
+\cvtagline{Flo Energy Pte Ltd}{Dec. 2024 -- May. 2025}{Data Analytics $ | $ Supervisor: Nils [Data Lead]}{Singapore}
+
+\cvbullets{
+  \item Building dagster pipeline for ingestion of data from various sources into
+  snowflake for analysis and machine learning models
+  \item Developing machine learning models for predictive analytics to forecast demand
+  and supply of energy market and clients
+  \item Developing and maintaining data visualisation dashboards for internal and
+  external stakeholders }
+
+\cvtagline{ADDX Pte Ltd}{Jun 2023 -- Dec. 2023}{Data Analytics Intern $ | $ Supervisor: Yogesh [Data team lead]}{Singapore}
+
+\cvbullets{
+  \item Managing and optimising overall of 30 database tables some containing over
+  3-million entries in Snowflake and configurations through DBT for analysis and
+  intelligence gathering
+  \item Real-time and historical data monitoring for development and production use
+  case
+  \item Developed over 4 department personalised dashboards for data visualisation
+  (Power BI,Py Plotly) for internal departments and Key Management to provide
+  business intelligence
+  \item Engineered 6 predictive analytics machine models to aid the sales department in
+  driving revenue. Both supervised and unsupervised models were developed and
+  results fed into dashboards }
+
+\cvtagline{Wiz.AI Pte Ltd}{May 2023 -- Jun 2023}{Finance Intern $ | $ Supervisor: Andy Teo [Finance director]}{Singapore}
+
+\cvbullets{
+  \item Preparations of key account statements (BS,P\&L)
+  \item Improving existing financial tracking processes and workflows for financial and
+  managerial accouting }
+
+\cvtagline{REANGLE Pte Ltd [Sustainability]}{May 2022 -- Aug 2022}{Data Analyst Intern}{Singapore}
+
+\cvbullets{
+  \item Conceptualized green finance business model through data analytics
+  \item Developed targeted green strategies for sectors and executed digital marketing
+  strategies
+  \item Formulated actionable tactics to promote green businesses
+  \item Promoted sustainable growth in alignment with SG goals through good ESG
+  practices }
+
+\cvtagline{Ministry of Health}{Nov 2020 -- Apr 2021}{Engagement \& Strategy Intern $ | $ Supervisor: Weng Chee}{Singapore}
+
+\cvbullets{
+  \item Administration of online telemedicine E-training (COVID-19)
+  \item Streamline processes in MOH LEAP Sandbox team with Python }
+
+\cvtagline{Singapore Armed Forces}{Jan 2019 -- Nov 2020}{Platoon Commander}{Singapore}
+
+\cvbullets{
+  \item Officer Cadet School (Logistics Formation) 115/19 - Top Graduate, Sword of
+  Honour }
+
+\newpage
+
+% Research Projects
+\cvsection{lightbulb}{Research Projects}
+
+\cvtagline{\href{https://github.com/HiIAmTzeKean/Streamsight}{Streamsight: A toolkit for offline evaluation of RS}}{Jan 2024 -- Dec 2024}{FYP, grade obtained: A+ | Supervisor: Prof. Sun Aixin [Associate Dean Academics]}{}
+
+\cvbullets{
+  \item Python, Recommender System, System architecture design, Machine learning
+  techniques
+  \item Evaluatoin framework to account for temporal dynamics of user/item interactions
+  through sliding window implementation and streaming of dataset to RecSys to
+  capture realistic data communication }
+
+\cvtagline{\href{https://github.com/HiIAmTzeKean/Jetson-Nano-SLAM}{Improving Localization Robustness of ORB-SLAM with Dual Cameras}}{Aug 2022 -- Jun 2023}{NTU President Scholar (Merit) | Supervisor: Prof. Lam Siew Kei [Assistant Chair Admission]}{}
+
+\cvbullets{
+  \item Embedded system (Nvidia Jetson Nano), GStreamer, ROS, ORB-SLAM, OpenCV, Linux
+  \item Develop dual-camera framework to be used in conjunction with ORB-SLAM to
+  increase the feature points for better localization of agent }
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{@{}X@{}X@{}}
+  % Awards
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{medal}{Awards}
+
+    \cvbullets{
+      \item Genk Capital Scholarship (2024)
+      \item Tan Sri Runme Shaw Scholarship (2023)
+      \item Ng Bok Eng Scholarship (2023)
+      \item NTU President Scholar, Merit (2023)
+      \item Dean's list all years applicable }
+  \end{minipage}
+   &
+  % Hackathons
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{medal}{Hackathons}
+
+    \cvbullets{
+      \item China Global Innovation Competition Joint prosthesis (2024)
+      \item NTU SCSE TechFest Hackathon, 1st runner up (2024)
+      \item TikTok Hackathon Challenge, Finalist (2023)
+      \item SUTD Hackathon, Champion (2023) }
+  \end{minipage}
+\end{tabularx}
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{@{}X@{}X@{}}
+  % Awards
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{business-time}{Business modules}
+
+    \cvbullets{
+      \item Investments
+      \item Business Finance
+      \item Accounting
+      \item Business Law
+      \item Management }
+  \end{minipage}
+   &
+  % Hackathons
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{code}{Computing modules}
+
+    \cvbullets{
+      \item Reinforcement learning
+      \item Big data management, Database
+      \item Natural language processing
+      \item Machine learning, Deep learning
+      \item Operating system }
+  \end{minipage}
+\end{tabularx}
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{@{}X@{}X@{}}
+  % Awards
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{certificate}{Qualities}
+
+    \cvbullets{
+      \item MBTI: ENTJ
+      \item Full stack programmer
+      \item Data analytics in Finance
+      \item Env (Window, MacOS, Linux)
+      \item English, Chinese proficient }
+  \end{minipage}
+   &
+  % Hackathons
+  \begin{minipage}[t]{\dimexpr0.5\textwidth-2\tabcolsep\relax}
+    \cvsection{chalkboard-teacher}{Leadership}
+
+    \cvbullets{
+      \item NTU Ambassador 2024 - 2025
+      \item NTU College (CCDS) Ambassador 2021-2024
+      \item NTU Overseas (GEM) Ambassador 2024
+      \item NTU College (COE) Ambassador 2021-2023
+      \item EXCO, NTU-Dyson ambassador 2021-2022
+      \item EXCO, NTU Aikido 2021-2022 }
+  \end{minipage}
+\end{tabularx}
+
+% Major Achievements
+\cvsection{star}{Major Achievements}
+
+\cvbullets{
+  \item Appointed and represented NTU locally and globally in key partnership events
+  such as Singapore-Sweden diagloue in NTU
+  \item Gathered over 48 donors and raised 1.49k for NTU Bursary fund raising in 2023
+  and subsequently invited to join the panelist in NTU giving day to share more
+  about the importance of giving back to the community
+  \item Dean's list all years applicable along with multiple scholarships and awards
+  from NTU and partner organisations
+  \item Invited to consistenly participate in NTU's leadership and ambassadorial
+  programs to represent the student body in fund raising and donor appreciation
+}
+
+% For ATS systems
+% Include information you prefer not to be questioned,
+% but that could help you pass ATS screening.
+\scalebox{0.001}{\textcolor{white}{python, java, sql, postgres, machine learning, snowflake, R}}
+\scalebox{0.001}{\textcolor{white}{student exchange GEM explorer representative to China}}
+\scalebox{0.001}{\textcolor{white}{English and Chinese proficient, full stack programmer, data analytics in finance}}
+
+\end{document}
