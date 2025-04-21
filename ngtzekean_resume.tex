@@ -12,19 +12,18 @@
     pdfsubtitle={ngtzekean_resume},
     pdflang={en},
     pdfmetalang={en},
-    pdfdate={D:20000000000000},
-    pdfcreationdate={D:20000000000000},
-    pdfmoddate={D:20000000000000},
-    pdfmetadate={D:20000000000000},
-    pdfcreator={},
-    pdfproducer={},
+    pdfdate={D:20250101103000},
+    pdfcreationdate={D:20250101103000},
+    pdfmoddate={D:20250101103000},
+    pdfmetadate={D:20250101103000},
+    pdfcreator={NG TZE KEAN},
+    pdfproducer={NG TZE KEAN}
 }
 
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
-
 \usepackage[fixed]{fontawesome5}
 
 \usepackage{tabularx} % For tagline table
@@ -40,13 +39,12 @@
 \definecolor{ntured}{HTML}{D71440}
 \definecolor{ntublue}{HTML}{181C62}
 
-% Font settings
-% Palatino style font
-\usepackage{tgpagella} % text only
-\usepackage{mathpazo}  % math & text
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\usepackage{xeCJK}
 
-% Times font (Times New Roman alike)
-% \usepackage{times}
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
 
 % Font size control variables
 \newcommand{\cvsectionfontsize}{11}       % Section font size
@@ -111,8 +109,7 @@
 
 % Candidate Name
 \begin{center}
-  {\bfseries\huge\scshape Ng Tze Kean} \\
-
+  {\bfseries\huge\scshape Ng Tze Kean (吴子健)} \\
   \vspace{1em}
 
   $ | $
@@ -130,31 +127,35 @@
 % Education
 \cvsection{graduation-cap}{Education}
 
-\cvtagline{Nanyang Technological University}{Aug. 2021 -- Jul. 2025}{Bachelor in Computer Science}{Singapore}
+\cvtagline{Nanyang Technological University}{Aug 2021 -- Jul 2025}{Bachelor in Computer Science}{Singapore}
 \cvbullets{
   \item CGPA: 4.92/5.0 (First class honors)
-  \item Specialization in AI, Minor in Business
-  \item Valedictorian of cohort 2025
+  \item Specialization in AI, Minor in Business 
+  \item Valedictorian of class 2025
   \item Koh Boon Hwee Scholar Award Nominee
 }
 
-\cvtagline{Peking University}{Jul. 2024 -- Jul. 2024}{Summer Exchange}{China}
-
-\cvbullets{
-  \item Selected student with scholarship to attend summer school in Peking University}
-
-\cvtagline{Shanghai Jiao Tong University}{Jan. 2024 -- Jun. 2024}{Exchange Student}{China}
-
-\cvtagline{University Michigan - Shanghai Jiao Tong University}{Jan. 2024 -- Jun. 2024}{Exchange Student}{China}
-
-\cvtagline{Tsinghua University}{Aug. 2023 -- Dec. 2023}{Virtual Exchange}{Singapore}
-
-\cvtagline{National University Singapore}{Jan. 2023 -- May. 2023}{Exchange Student}{Singapore}
+\cvsection{globe}{Exchange Universities}
+\vspace{-0.5em}
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+  \textbf{Peking University} & \textbf{Tsinghua University} \\
+  China, Jul 2024 -- Jul 2024 & Singapore (Virtual), Aug 2023 -- Dec 2023 \\
+  \emph{Scholarship offered for summer program} & \emph{Big data systems and deep learning} \\
+  [0.5em]
+  \textbf{Shanghai Jiao Tong University} & \textbf{National University of Singapore} \\
+  China, Jan 2024 -- Jun 2024 & Singapore, Jan 2023 -- May 2023 \\
+  \emph{Reinforcement learning and Cyber security} & \emph{Software engineering and Database systems} \\
+  [0.5em]
+  \textbf{University Michigan - Shanghai Jiao Tong University} & \\
+  China, Jan 2024 -- Jun 2024 & \\
+  \emph{Machine learning in Python} & \\
+\end{tabularx}
+\vspace{1.5em}
 
 % Professional Experience
 \cvsection{briefcase}{Professional Experience}
 
-\cvtagline{Flo Energy Pte Ltd}{Dec. 2024 -- May. 2025}{Data Analytics $ | $ Supervisor: Nils [Data Lead]}{Singapore}
+\cvtagline{Flo Energy Pte Ltd}{Dec 2024 -- May 2025}{Data Analytics $ | $ Supervisor: Nils [Data Lead]}{Singapore}
 
 \cvbullets{
   \item Building Dagster pipeline for ingestion of data from various sources into
@@ -186,7 +187,7 @@
   \item Improving existing financial tracking processes and workflows for financial and
   managerial accouting }
 
-\cvtagline{REANGLE Pte Ltd [Sustainability]}{May 2022 -- Aug 2022}{Data Analyst Intern}{Singapore}
+\cvtagline{REANGLE Pte Ltd [Sustainability]}{May 2022 -- Aug 2022}{Data Analyst Intern  $ | $ Supervisor: Kazu Watanabe [CEO]}{Singapore}
 
 \cvbullets{
   \item Conceptualized green finance business model through data analytics
@@ -351,6 +352,8 @@
 }
 
 % For ATS systems
+% Include information you prefer not to be questioned,
+% but that could help you pass ATS screening.
 \scalebox{0.001}{\textcolor{white}{python, java, sql, postgres, machine learning, snowflake, R}}
 \scalebox{0.001}{\textcolor{white}{student exchange GEM explorer representative to China}}
 \scalebox{0.001}{\textcolor{white}{English and Chinese proficient, full stack programmer, data analytics in finance}}
