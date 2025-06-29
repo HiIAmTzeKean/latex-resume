@@ -18,6 +18,12 @@
     pdfmetadate={D:20250101103000},
     pdfcreator={NG TZE KEAN},
     pdfproducer={NG TZE KEAN}
+    pdfdate={D:20250101103000},
+    pdfcreationdate={D:20250101103000},
+    pdfmoddate={D:20250101103000},
+    pdfmetadate={D:20250101103000},
+    pdfcreator={NG TZE KEAN},
+    pdfproducer={NG TZE KEAN}
 }
 
 \usepackage{amsmath}
@@ -39,6 +45,12 @@
 \definecolor{ntured}{HTML}{D71440}
 \definecolor{ntublue}{HTML}{181C62}
 
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\usepackage{xeCJK}
+
+\usepackage{unicode-math}
+\setmathfont{Latin Modern Math}
 \usepackage{fontspec}
 \setmainfont{TeX Gyre Pagella}
 \usepackage{xeCJK}
@@ -110,6 +122,7 @@
 % Candidate Name
 \begin{center}
   {\bfseries\huge\scshape Ng Tze Kean (吴子健)} \\
+  {\bfseries\huge\scshape Ng Tze Kean (吴子健)} \\
   \vspace{1em}
 
   $ | $
@@ -128,13 +141,29 @@
 \cvsection{graduation-cap}{Education}
 
 \cvtagline{Nanyang Technological University}{Aug 2021 -- Jul 2025}{Bachelor in Computer Science}{Singapore}
+\vspace{0.5em}
 \cvbullets{
-  \item CGPA: 4.92/5.0 (First class honors)
+  \item CGPA: 4.92/5.0 (Highest Distinction Honours) | Dean's List all years applicable
   \item Specialization in AI, Minor in Business 
-  \item Valedictorian of class 2025
-  \item Koh Boon Hwee Scholar Award Nominee
+  \item Valedictorian of class 2025, Koh Boon Hwee Scholar Awardee
 }
 
+\cvsection{globe}{Exchange Universities}
+\vspace{-0.5em}
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+  \textbf{Peking University} & \textbf{Tsinghua University} \\
+  China, Jul 2024 -- Jul 2024 & Singapore (Virtual), Aug 2023 -- Dec 2023 \\
+  \emph{Scholarship offered for summer program} & \emph{Big data systems and deep learning} \\
+  [0.5em]
+  \textbf{Shanghai Jiao Tong University} & \textbf{National University of Singapore} \\
+  China, Jan 2024 -- Jun 2024 & Singapore, Jan 2023 -- May 2023 \\
+  \emph{Reinforcement learning and Cyber security} & \emph{Software engineering and Database systems} \\
+  [0.5em]
+  \textbf{University Michigan - Shanghai Jiao Tong University} & \\
+  China, Jan 2024 -- Jun 2024 & \\
+  \emph{Machine learning in Python} & \\
+\end{tabularx}
+\vspace{1.5em}
 \cvsection{globe}{Exchange Universities}
 \vspace{-0.5em}
 \begin{tabularx}{\textwidth}{@{}X X@{}}
@@ -155,17 +184,15 @@
 % Professional Experience
 \cvsection{briefcase}{Professional Experience}
 
-\cvtagline{Flo Energy Pte Ltd}{Dec 2024 -- May 2025}{Data Analytics $ | $ Supervisor: Nils [Data Lead]}{Singapore}
+\cvtagline{Data Analyst}{Dec 2024 -- May 2025}{Flo Energy Pte Ltd $ | $ Supervisor: Nils Trepstra [Data Lead]}{Singapore}
 
 \cvbullets{
-  \item Building Dagster pipeline for ingestion of data from various sources into
-  snowflake for analysis and machine learning models
-  \item Developing machine learning models for predictive analytics to forecast demand
-  and supply of energy market and clients
-  \item Developing and maintaining data visualization dashboards for internal and
-  external stakeholders }
+  \item Predictive modeling of demand and supply of the energy market implementation using Tensorflow, Scikit-learn for modeling and simulation via building dedicated libraries
+  \item Battery Energy Storage Systems (BESS) simulation and analysis to drive new revenue stream
+  \item Streaming of dataset during training and testing for production simulation and enforcement of data masking using sliding window methodology
+  \item Feature engineering and time series analysis in Python using packages like Pandas, Numpy }
 
-\cvtagline{ADDX Pte Ltd}{Jun 2023 -- Dec. 2023}{Data Analytics Intern $ | $ Supervisor: Yogesh [Data team lead]}{Singapore}
+\cvtagline{Data Analyst Intern}{Jun 2023 -- Dec. 2023}{ADDX Pte Ltd $ | $ Supervisor: Yogesh Bharadwaj [Data team lead]}{Singapore}
 
 \cvbullets{
   \item Managing and optimizing overall of 30 database tables some containing over
@@ -180,14 +207,14 @@
   driving revenue. Both supervised and unsupervised models were developed and
   results fed into dashboards }
 
-\cvtagline{Wiz.AI Pte Ltd}{May 2023 -- Jun 2023}{Finance Intern $ | $ Supervisor: Andy Teo [Finance director]}{Singapore}
+\cvtagline{Finance Intern}{May 2023 -- Jun 2023}{Wiz.AI Pte Ltd $ | $ Supervisor: Andy Teo [Finance director]}{Singapore}
 
 \cvbullets{
   \item Preparations of key account statements (BS,P\&L)
   \item Improving existing financial tracking processes and workflows for financial and
   managerial accouting }
 
-\cvtagline{REANGLE Pte Ltd [Sustainability]}{May 2022 -- Aug 2022}{Data Analyst Intern  $ | $ Supervisor: Kazu Watanabe [CEO]}{Singapore}
+\cvtagline{Data Analyst Intern}{May 2022 -- Aug 2022}{REANGLE Pte Ltd  [Sustainability]  $ | $ Supervisor: Kazu Watanabe [CEO]}{Singapore}
 
 \cvbullets{
   \item Conceptualized green finance business model through data analytics
@@ -197,13 +224,13 @@
   \item Promoted sustainable growth in alignment with SG goals through good ESG
   practices }
 
-\cvtagline{Ministry of Health}{Nov 2020 -- Apr 2021}{Engagement \& Strategy Intern $ | $ Supervisor: Weng Chee}{Singapore}
+\cvtagline{Engagement \& Strategy Intern}{Nov 2020 -- Apr 2021}{Ministry of Health $ | $ Supervisor: Weng Chee}{Singapore}
 
 \cvbullets{
   \item Administration of online telemedicine E-training (COVID-19)
   \item Streamline processes in MOH LEAP Sandbox team with Python }
 
-\cvtagline{Singapore Armed Forces}{Jan 2019 -- Nov 2020}{Platoon Commander}{Singapore}
+\cvtagline{Platoon Commander}{Jan 2019 -- Nov 2020}{Singapore Armed Forces}{Singapore}
 
 \cvbullets{
   \item Officer Cadet School (Logistics Formation) 115/19 - Top Graduate, Sword of
@@ -254,6 +281,7 @@
     \cvsection{medal}{Awards}
 
     \cvbullets{
+      \item Valedictorian of college (2025)
       \item Genk Capital Scholarship (2024)
       \item Tan Sri Runme Shaw Scholarship (2023)
       \item Ng Bok Eng Scholarship (2023)
@@ -308,10 +336,10 @@
 
     \cvbullets{
       \item MBTI: ENTJ
-      \item Full stack programmer
-      \item Data analytics in Finance
-      \item Env (Window, MacOS, Linux)
-      \item English, Chinese proficient }
+      \item English, Chinese proficient
+      \item Worked in cross functional teams
+      \item Python, SQL, Java, C
+      \item Env (Window, MacOS, Linux) }
   \end{minipage}
    &
   % Hackathons
@@ -333,25 +361,27 @@
 
 \cvbullets{
   \item Appointed and represented NTU locally and globally in key partnership events
-  such as Singapore-Sweden diagloue in NTU
+  such as Singapore-Sweden diagloue in NTU where I hosted the King of Sweden.
   \item Gathered over 48 donors and raised 1.49k for NTU Bursary fund raising in 2023
   and subsequently invited to join the panelist in NTU giving day to share more
-  about the importance of giving back to the community
+  about the importance of giving back to the community.
   \item Dean's list all years applicable along with multiple scholarships and awards
-  from NTU and partner organisations
-  \item Invited to consistenly participate in NTU's leadership and ambassadorial
-  programs to represent the student body in fund raising and donor appreciation
+  from NTU and partner organisations.
+  \item Invited to consistently participate in NTU's leadership and ambassadorial
+  programs to represent the student body in fund raising and donor appreciation.
 }
 
 % Major Achievements
 \cvsection{fire}{Current interests}
 
 \cvbullets{
-  \item Design and building of predictive model architecture
-  \item RL applications in NLP and optimization techniques
+  \item Design and building of predictive model architecture for forecasting and enhancing decision making
+  \item Applications in NLP through langchain to create agentic workflows
 }
 
 % For ATS systems
+% Include information you prefer not to be questioned,
+% but that could help you pass ATS screening.
 % Include information you prefer not to be questioned,
 % but that could help you pass ATS screening.
 \scalebox{0.001}{\textcolor{white}{python, java, sql, postgres, machine learning, snowflake, R}}
